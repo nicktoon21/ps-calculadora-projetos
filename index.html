@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Orçamentos!</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/configuracoes.html">Configurações</a>
+        </nav>
+    </div>
+    <hr>
+    <hr>
+    <div class="main">
+        <div class="Stack">
+            <label for="stack">Selecione a Stack:</label>
+            <input list="stacks" name="stack" id="stack">
+            <datalist id="stacks">
+                <option value="Web" />
+                <option value="App" />
+                <option value="Api" />
+            </datalist>
+        </div>
+        <span>-----------</span>
+        <div class="Api">
+            <p>
+                API:
+                <input type="radio" id="SimAPI" name="API" value="sim">
+                <label for="SimAPI">Sim</label>
+                <input type="radio" id="NaoAPI" name="API" value="nao">
+                <label for="NaoAPI">Não</label>
+            </p>
+        </div>
+        <span></span>-----------</span>
+        <div class="Front-end">
+            <label for="qtd-frontend">Quantidade de telas:</label>
+            <input type="number" min="1" class="Qtd-frontend" id="qtd-frontend">
+            <p>----</p>
+            <div class="Front-desc">
+                <div class="tela-1">
+                    <label for="tela-1-desc">Tela:</label>
+                    <input type="text" class="tela-1-desc" id="tela-1-desc">
+                    <div class="tela-1-complexidade">
+                        <p>
+                            Complexidade:
+                            <input type="radio" id="tela-1-simples" name="tela-1-complexidade-nivel" value="simples">
+                            <label for="tela-1-simples">Simples</label>
+                            <input type="radio" id="tela-1-moderado" name="tela-1-complexidade-nivel" value="moderado">
+                            <label for="tela-1-moderado">Moderado</label>
+                            <input type="radio" id="tela-1-complexo" name="tela-1-complexidade-nivel" value="complexo">
+                            <label for="tela-1-complexo">Complexo</label>
+                            <input type="radio" id="tela-1-desconhecido" name="tela-1-complexidade-nivel" value="desconhecido">
+                            <label for="tela-1-desconhecido">Desconhecido</label>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>
+
+<!--    <div class="FrontEnd">
+            <label for="stack">Quantidade de<span> Telas</span></label>
+            <input/>
+        </div> -->
