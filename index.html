@@ -5,131 +5,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Orçamentos</title>
 </head>
 
 <body>
     <div class="app">
         <div class="header">
-            <h1>Orçamentos!</h1>
-            <nav>
-                <a href="/index.html">Home</a>
-                <a href="/configuracoes.html">Configurações</a>
-            </nav>
+            <img src="./assets/logo_novo.png" alt="Primesoftware Soluções Inteligente">
+            <h1>ORÇAMENTOS DE PRODUTOS PRIMESOFTWARE</h1>
         </div>
-        <hr>
-        <hr>
+
         <div class="main">
-            <div class="Stack">
-                <label for="stack">Selecione a Stack:</label>
-                <input list="stacks" name="stack" id="stack">
-                <datalist id="stacks">
-                    <option value="Web" />
-                    <option value="App" />
-                    <option value="Api" />
-                </datalist>
+            <div class="conteudo">
+                <div class="subconteudo">
+                    <div class="cliente">
+                        <label for="cliente">Cliente: </label>
+                        <input id="cliente" type="text">
+                    </div>
+                    <div class="Stack">
+                        <label for="stack">Selecione a Stack:</label>
+                        <input list="stacks" name="stack">
+                        <datalist id="stacks">
+                            <option value="Web">
+                            <option value="App">
+                            <option value="Api">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="Api-check">
+                    <p>
+                        API:
+                        <input type="radio" id="SimAPI" name="API" value="sim">
+                        <label for="SimAPI">Sim</label>
+                        <input type="radio" id="NaoAPI" name="API" value="nao">
+                        <label for="NaoAPI">Não</label>
+                    </p>
+                </div>
             </div>
-            <span>-----------</span>-
-            <div class="Api-check">
-                <p>
-                    API:
-                    <input type="radio" id="SimAPI" name="API" value="sim">
-                    <label for="SimAPI">Sim</label>
-                    <input type="radio" id="NaoAPI" name="API" value="nao">
-                    <label for="NaoAPI">Não</label>
-                </p>
-            </div>
-            <span></span>-----------</span>
-            <div class="Front-end">
-                <h2>Front-End</h2>
-                <label for="qtd-frontend">Quantidade de telas:</label>
-                <input type="number" min="1" class="Qtd-frontend" id="qtd-frontend">
-                <p>----</p>
-                <div class="Front-desc">
+            <div class="front-end">
+                <div class="telas">
+                    <label for="qtd-frontend">Quantidade de telas:</label>
+                    <input type="number" min="1" class="Qtd-frontend" id="qtd-frontend">
+                </div>
+                <div class="front-desc">
                     <div class="tela-1">
-                        <label for="tela-1-desc">Tela:</label>
-                        <input type="text" class="tela-1-desc" id="tela-1-desc">
+                        <div class="tela">
+                            <label for="tela-1-desc">Tela:</label>
+                            <input type="text" class="tela-1-desc" id="tela-1-desc">
+                        </div>
                         <div class="tela-1-complexidade">
                             <p>
                                 Complexidade:
-                                <input type="radio" id="tela-1-simples" name="tela-1-complexidade-nivel" value="simples">
+                                <input type="radio" id="tela-1-simples" name="tela-1-complexidade-nivel"
+                                    value="simples">
                                 <label for="tela-1-simples">Simples</label>
-                                <input type="radio" id="tela-1-moderado" name="tela-1-complexidade-nivel" value="moderado">
+                                <input type="radio" id="tela-1-moderado" name="tela-1-complexidade-nivel"
+                                    value="moderado">
                                 <label for="tela-1-moderado">Moderado</label>
-                                <input type="radio" id="tela-1-complexo" name="tela-1-complexidade-nivel" value="complexo">
+                                <input type="radio" id="tela-1-complexo" name="tela-1-complexidade-nivel"
+                                    value="complexo">
                                 <label for="tela-1-complexo">Complexo</label>
-                                <input type="radio" id="tela-1-desconhecido" name="tela-1-complexidade-nivel" value="desconhecido">
+                                <input type="radio" id="tela-1-desconhecido" name="tela-1-complexidade-nivel"
+                                    value="desconhecido">
                                 <label for="tela-1-desconhecido">Desconhecido</label>
                             </p>
                         </div>
                     </div>
-                    <span>--</span>
+
                     <div class="tela-2">
-                        <label for="tela-2-desc">Tela:</label>
-                        <input type="text" class="tela-2-desc" id="tela-2-desc">
+                        <div class="tela">
+                            <label for="tela-2-desc">Tela:</label>
+                            <input type="text" class="tela-2-desc" id="tela-2-desc">
+                        </div>
                         <div class="tela-2-complexidade">
                             <p>
                                 Complexidade:
-                                <input type="radio" id="tela-2-simples" name="tela-2-complexidade-nivel" value="simples">
+                                <input type="radio" id="tela-2-simples" name="tela-2-complexidade-nivel"
+                                    value="simples">
                                 <label for="tela-2-simples">Simples</label>
-                                <input type="radio" id="tela-2-moderado" name="tela-2-complexidade-nivel" value="moderado">
+                                <input type="radio" id="tela-2-moderado" name="tela-2-complexidade-nivel"
+                                    value="moderado">
                                 <label for="tela-2-moderado">Moderado</label>
-                                <input type="radio" id="tela-2-complexo" name="tela-2-complexidade-nivel" value="complexo">
+                                <input type="radio" id="tela-2-complexo" name="tela-2-complexidade-nivel"
+                                    value="complexo">
                                 <label for="tela-1-complexo">Complexo</label>
-                                <input type="radio" id="tela-2-desconhecido" name="tela-2-complexidade-nivel" value="desconhecido">
+                                <input type="radio" id="tela-2-desconhecido" name="tela-2-complexidade-nivel"
+                                    value="desconhecido">
                                 <label for="tela-2-desconhecido">Desconhecido</label>
                             </p>
                         </div>
                     </div>
-                    <span>--</span>
+
                     <div class="tela-3">
-                        <label for="tela-3-desc">Tela:</label>
-                        <input type="text" class="tela-3-desc" id="tela-3-desc">
+                        <div class="tela">
+                            <label for="tela-3-desc">Tela:</label>
+                            <input type="text" class="tela-3-desc" id="tela-3-desc">
+                        </div>
                         <div class="tela-3-complexidade">
                             <p>
                                 Complexidade:
-                                <input type="radio" id="tela-3-simples" name="tela-3-complexidade-nivel" value="simples">
+                                <input type="radio" id="tela-3-simples" name="tela-3-complexidade-nivel"
+                                    value="simples">
                                 <label for="tela-3-simples">Simples</label>
-                                <input type="radio" id="tela-3-moderado" name="tela-3-complexidade-nivel" value="moderado">
+                                <input type="radio" id="tela-3-moderado" name="tela-3-complexidade-nivel"
+                                    value="moderado">
                                 <label for="tela-3-moderado">Moderado</label>
-                                <input type="radio" id="tela-3-complexo" name="tela-3-complexidade-nivel" value="complexo">
+                                <input type="radio" id="tela-3-complexo" name="tela-3-complexidade-nivel"
+                                    value="complexo">
                                 <label for="tela-1-complexo">Complexo</label>
-                                <input type="radio" id="tela-3-desconhecido" name="tela-3-complexidade-nivel" value="desconhecido">
+                                <input type="radio" id="tela-3-desconhecido" name="tela-3-complexidade-nivel"
+                                    value="desconhecido">
                                 <label for="tela-3-desconhecido">Desconhecido</label>
                             </p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="API">
-                <h2>API</h2>
-                <label for="qtd-api">Quantidade de rotas:</label>
-                <input type="number" min="1" class="Qtd-api" id="qtd-api">
-                <p>----</p>
-                <div class="Api-desc">
-                    <div class="Api-1">
-                        <label for="api-1-desc">Rota:</label>
-                        <input type="text" class="Api-1-desc" id="api-1-desc">
-                        <div class="Api-1-complexidade">
+            <div class="back-end">
+                <div class="api">
+                    <label for="qnt-api">Quantidade de api:</label>
+                    <input type="number" min="1" class="Qtd-back-end" id="qtd-back-end">
+                </div>
+                <div class="api-desc">
+                    <div class="api-1">
+                        <div class="api">
+                            <label for="api-1-desc">Rota:</label>
+                            <input type="text" class="api-1-desc" id="api-1-desc">
+                        </div>
+                        <div class="api-1-complexidade">
                             <p>
                                 Complexidade:
-                                <input type="radio" id="api-1-simples" name="api-1-complexidade-nivel" value="simples">
+                                <input type="radio" id="api-1-simples" name="api-1-complexidade-nivel"
+                                    value="simples">
                                 <label for="api-1-simples">Simples</label>
-                                <input type="radio" id="api-1-moderado" name="api-1-complexidade-nivel" value="moderado">
+                                <input type="radio" id="api-1-moderado" name="api-1-complexidade-nivel"
+                                    value="moderado">
                                 <label for="api-1-moderado">Moderado</label>
-                                <input type="radio" id="api-1-complexo" name="api-1-complexidade-nivel" value="complexo">
+                                <input type="radio" id="api-1-complexo" name="api-1-complexidade-nivel"
+                                    value="complexo">
                                 <label for="api-1-complexo">Complexo</label>
-                                <input type="radio" id="api-1-desconhecido" name="api-1-complexidade-nivel" value="desconhecido">
+                                <input type="radio" id="api-1-desconhecido" name="api-1-complexidade-nivel"
+                                    value="desconhecido">
                                 <label for="api-1-desconhecido">Desconhecido</label>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="funcoes">
+                <div class="calcular">
+                    <img src="" alt="Calculadora">
+                    <button>
+                        CALCULAR
+                    </button>
+                </div>
+                <div class="total">
+                    <label for="valor">Valor: </label>
+                    <input type="text">
+                </div>
+                <div class="envios">
+                    <button>
+                        <img src="" alt="Imprimir">
+                    </button>
+                    <button>
+                        <img src="" alt="Enviar no email">
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="footer">
-        </div>
+        <footer>
+            <div>
+                texte
+            </div>
+        </footer>
     </div>
     <script src="javascript/index.js"></script>
 </body>
